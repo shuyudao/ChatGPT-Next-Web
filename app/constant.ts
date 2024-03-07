@@ -65,8 +65,8 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
-  Azure = "Azure",
-  Google = "Google",
+  // Azure = "Azure",
+  // Google = "Google",
 }
 
 export enum ModelProvider {

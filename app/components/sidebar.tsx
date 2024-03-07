@@ -155,10 +155,11 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          NextChat
+          AiAPI NextChat
         </div>
+        <div className={styles["sidebar-sub-title"]}>🔗chat.aiapi.buzz</div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          本站仅用于对API Key的测试使用。
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -179,13 +180,10 @@ export function SideBar(props: { className?: string }) {
           }}
           shadow
         />
-        <IconButton
-          icon={<PluginIcon />}
-          text={shouldNarrow ? undefined : Locale.Plugin.Name}
-          className={styles["sidebar-bar-button"]}
-          onClick={() => showToast(Locale.WIP)}
-          shadow
-        />
+
+        <a href="https://aiapi.buzz" target="_blank" rel="noopener noreferrer">
+          <IconButton icon={<PluginIcon />} text="购买API Key" shadow />
+        </a>
       </div>
 
       <div

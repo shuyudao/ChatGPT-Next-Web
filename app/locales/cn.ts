@@ -8,7 +8,7 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 API Key。",
   },
   Auth: {
     Title: "需要密码",
@@ -281,19 +281,20 @@ const cn = {
         SubTitle: "是否使用自定义 Azure 或 OpenAI 服务",
       },
       Provider: {
-        Title: "模型服务商",
-        SubTitle: "切换不同的服务商",
+        Title: "模型服务",
+        SubTitle: "切换不同的服务源",
       },
       OpenAI: {
         ApiKey: {
           Title: "API Key",
-          SubTitle: "使用自定义 OpenAI Key 绕过密码访问限制",
+          SubTitle: "你需要设置API Key才可以访问服务",
           Placeholder: "OpenAI API Key",
         },
 
         Endpoint: {
           Title: "接口地址",
-          SubTitle: "除默认地址外，必须包含 http(s)://",
+          SubTitle:
+            "默认OpenAI直连接口，除默认地址外，你可以填入中转的地址，必须包含 http(s)://",
         },
       },
       Azure: {
